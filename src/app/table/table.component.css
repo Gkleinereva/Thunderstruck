@@ -5,5 +5,29 @@ h2 {
 .table {
 	background-color: black;
 	margin: auto;
-	margin-top: 100px;
+	margin-top: 150px;
+	width: 500px;
+	height: 500px;
+	border-radius: 250px;
+}
+
+.player {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	border-radius: 40px;
+	background-color: purple;
+}
+
+.player:hover {
+	background-color: pink;
+}
+
+.player-num {
+	margin-top: 12px;
+	text-align: center;
+}
+
+.drinking-time {
+	text-align: center;
 }

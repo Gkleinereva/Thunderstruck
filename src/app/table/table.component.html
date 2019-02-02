@@ -1,6 +1,10 @@
 <app-header></app-header>
-<h2>Which player is starting?</h2>
+<h3 *ngIf="mostTimeDrinking <= 0">Which player is starting?</h3>
+<h3 *ngIf="mostTimeDrinking > 0">Avoid the red spots; see drinking times.</h3>
 
 <div class='table' id='table' (window:resize)="ResizeDiv()">
-
+	<div *ngFor="let player of playerData; let i = index" [id]="'player' + i" class="player" [ngStyle]="GetStyle(i)" (click)="ComputeTimings(i)">
+		<div class='player-num' *ngIf="mostTimeDrinking > 0">Player {{player.playerNum}}</div>
+		<div class='drinking-time' *ngIf="mostTimeDrinking > 0">{{player.timeDrinkingFormatted}}</div>
+	</div>
 </div>

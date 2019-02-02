@@ -1,6 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 body {
 	background: url("assets/lightning.png") no-repeat center center fixed; 
-
 	background-size: cover;
+	height: 100%;
+	overflow: hidden;
+	min-width: 700px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
 }

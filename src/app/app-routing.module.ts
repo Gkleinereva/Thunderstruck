@@ -8,7 +8,8 @@ const routes: Routes = [
 	{path: 'numPlayers', component: NumberInputComponent},
 	{path: 'numPlayers/:numPlayers', component: TableComponent},
 	{path: 'numPlayers/:numPlayers/startingPlayer/:startPlayer', component: TableComponent},
-	{path: '', redirectTo: '/numPlayers', pathMatch: 'full'}
+	{path: '', redirectTo: '/numPlayers', pathMatch: 'full'},
+	{path: '**', redirectTo: '/numPlayers', pathMatch: 'full'}
 ];
 
 @NgModule({
